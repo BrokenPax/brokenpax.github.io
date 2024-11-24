@@ -1,17 +1,27 @@
 
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Orbitron', 'Audiowide', sans-serif;
   background: radial-gradient(circle at center, #1a002e, #000);
   color: #fff;
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  padding: 50px 20px;
+  padding: 100px 20px;
   background: linear-gradient(145deg, #ff007f, #007fff);
   background-size: 200% 200%;
   animation: gradient 6s ease infinite;
+}
+
+.hero .logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .hero h1 {
@@ -28,23 +38,34 @@ body {
 .buttons .cta-button {
   display: inline-block;
   margin: 10px;
-  padding: 10px 20px;
-  background: #fff;
-  color: #000;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background: linear-gradient(145deg, #ff007f, #007fff);
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
 }
 
 .buttons .cta-button:hover {
-  background: #ff007f;
-  color: #fff;
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #007fff, #ff007f);
+  box-shadow: 0 6px 20px rgba(255, 0, 127, 0.6);
 }
 
 main {
   padding: 20px;
   text-align: center;
+}
+
+main img.about-gif {
+  margin-top: 20px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 footer {
