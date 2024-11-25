@@ -41,7 +41,7 @@ body {
 .hero h1 {
   font-size: 6rem;
   color: #fff;
-  font-family: 'Atomic Age';
+  font-family: 'Syne Mono', monospace;
   text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9);
   display: inline-block;
 }
@@ -89,4 +89,30 @@ body {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+#countdown-timer {
+    margin-top: 20px;
+    font-family: 'Syne Mono', monospace;
+    color: #fff;
+    text-align: center;
+}
+
+#countdown-timer .timer {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#countdown-timer .timer span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#countdown-timer .label {
+    font-size: 1rem;
+    margin-left: 5px;
 }
