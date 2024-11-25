@@ -1,17 +1,17 @@
-
 body {
   margin: 0;
-  font-family: 'Almendra Display', sans-serif;
+  font-family: 'Syne Mono', monospace;
   background: #000;
   color: #fff;
-  overflow-x: hidden;
+  text-align: center;
 }
 
 .hero {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('bom_sm.png') no-repeat center center/cover;
+  background: url('bom_wide.png') no-repeat center center/cover;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,42 +27,36 @@ body {
   gap: 10px;
 }
 
-.social-button {
+.social-button img {
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  text-align: center;
-  line-height: 36px;
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  transition: 0.3s;
+  transition: transform 0.3s;
 }
 
-.social-button:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: #000;
+.social-button img:hover {
+  transform: scale(1.2);
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 6rem;
   color: #fff;
-  text-shadow: 2px 2px 8px #000;
-  animation: matrix-animation 3s infinite;
+  font-family: 'Atomic Age';
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9);
+  display: inline-block;
 }
 
-.hero p {
-  font-size: 1.5rem;
+#hero-subtitle {
+  font-size: 1.8rem;
   margin: 20px 0;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
 }
 
 .buttons .cta-button {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 0.6rem;
   background: linear-gradient(145deg, #ff007f, #007fff);
   color: #fff;
   text-transform: uppercase;
@@ -78,8 +72,21 @@ body {
   box-shadow: 0 6px 20px rgba(255, 0, 127, 0.6);
 }
 
-/* Matrix-style animation */
-@keyframes matrix-animation {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(2); }
+#about {
+  padding: 50px 10px;
+  background: linear-gradient(90deg, #0f0c29, #8b0000, #8a2be2, #302b63, #24243e);
+  background-size: 500% 500%;
+  animation: screensaver 10s infinite ease-in-out;
+  color: #fff;
+}
+
+.about-gif {
+  max-width: 80%;
+  margin-top: 20px;
+}
+
+@keyframes screensaver {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
