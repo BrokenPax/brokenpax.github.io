@@ -221,3 +221,37 @@ img, video, iframe {
     max-width: 100%;
     overflow: hidden; /* Prevents background from exceeding bounds */
 }
+
+/* Universal Fixes for Overflow */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Hero Section Adjustments */
+.hero {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* About Section Background Fix */
+#about {
+    background: linear-gradient(270deg, #e91e63, #9c27b0, #3f51b5, #03a9f4);
+    background-size: 400% 400%; /* Full coverage */
+    width: 100vw; /* Ensure it spans the full width */
+    padding: 30px 15px;
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+    #about {
+        padding: 20px 10px; /* Adjust padding for readability */
+    }
+}
