@@ -116,3 +116,98 @@ body {
     font-size: 1rem;
     margin-left: 5px;
 }
+
+/* General mobile-friendly styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.hero {
+    height: 100vh;
+    background: url('bom_sm.png') no-repeat center center/cover;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Social media buttons for smaller screens */
+.social-media {
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.social-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive text sizes */
+.hero h1 {
+    font-size: 4rem;
+}
+
+#hero-subtitle {
+    font-size: 1.2rem;
+}
+
+/* Responsive buttons */
+.buttons .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin: 5px;
+}
+
+/* About Section */
+#about {
+    padding: 30px 15px;
+    font-size: 1rem;
+}
+
+/* Countdown Timer on Mobile */
+#countdown-timer .timer {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#countdown-timer .timer span {
+    padding: 8px 12px;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    #hero-subtitle {
+        font-size: 1rem;
+    }
+
+    #about {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .buttons .cta-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    #about {
+        font-size: 0.8rem;
+    }
+}
