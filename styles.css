@@ -199,3 +199,25 @@ body {
         height: 25px; /* Smaller icons for compact view */
     }
 }
+
+/* Full-Screen Fixes */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Universal Fix for Content Overflow */
+* {
+    box-sizing: border-box; /* Ensures width includes padding */
+}
+
+img, video, iframe {
+    max-width: 100%; /* Constrain media to screen width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Specific Fix for Wide Elements */
+.hero {
+    max-width: 100%;
+    overflow: hidden; /* Prevents background from exceeding bounds */
+}
